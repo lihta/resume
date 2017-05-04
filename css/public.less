@@ -1,0 +1,24 @@
+@percentage:100%;
+@url:"../img";
+.transition(@property:all,@duration:1s,@timingFunction:ease,@delay:0s){
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+.pos(@pos:absolute,@left:0,@right:auto,@top:0,@bottom:auto,@zIndex:1){
+  position: @pos;
+  left: @left;
+  right:@right;
+  top:@top;
+  bottom:@bottom;
+  z-index: @zIndex;
+}
+.css3(@k,@v){
+  -webkit-@{k}:@v;
+  -moz-@{k}:@v;
+  -ms-@{k}:@v;
+  -o-@{k}:@v;
+  @{k}:@v;
+}

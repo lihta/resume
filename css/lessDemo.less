@@ -1,0 +1,40 @@
+@import (reference) "public";/*public代码不会解析在css文件中*/
+.headerWrap{
+    width: @percentage;
+    height: 638px;
+    .banner{
+      width: @percentage;
+      height: @percentage;
+      background: orange;
+    }
+}
+.header{
+  width: @percentage;
+  height: 83px;
+  background: url("@{url}/nav-b.png") repeat-x;
+  .pos;
+  .headerCon{
+    width: 1000px;
+    margin: 0 auto;
+    h1{
+      float: left;
+      img{
+        display: block;
+        margin-top: 18px;
+      }
+    }
+    ul{
+      float: right;
+      li{
+        line-height: 89px;
+        float: left;
+        padding: 0 18px;
+        font-size: 16px;
+        a{
+          color: #fff;
+        }
+      }
+    }
+
+  }
+}

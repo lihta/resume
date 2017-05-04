@@ -1,0 +1,430 @@
+html, body, .main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/6.jpg) no-repeat;
+    background-size: 100% 100%;
+    z-index: -2;
+    /*  -webkit-filter: blur(3px) opacity(.8) ;
+      filter: blur(3px)  opacity(.8);
+
+      transform: scale(1.2);*/
+}
+
+
+.slide1 > :nth-child(1) {
+    width: 4rem;
+    margin: 1.5rem 2rem;
+    border-radius: 70% 80% 90% 60%;
+    animation: rotateInDownLeft 1.5s both;
+    /*box-shadow:0 0 1rem 1rem #bbb inset,0 0 1rem 2rem red inset;*/
+}
+
+.slide1 > :nth-child(2) {
+    font-size: .5rem;
+    color: #c0c68a;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    text-align: center;
+    padding-left: 2.3rem;
+    padding-top: 4rem;
+    animation: fadeInUp 1s 2s 1 both;
+}
+
+.slide1 > :nth-child(4) {
+    position: absolute;
+    left: 2.5rem;
+    top: 6rem;
+    animation: rollOut 3s .5s infinite both;
+    filter: opacity(.5);
+    -webkit-filter: opacity(.5);
+}
+
+.slide1 > :nth-child(5) {
+    position: absolute;
+    left: 3rem;
+    top: 6.6rem;
+    width: 7%;
+    height: 7%;
+    transform: rotate(45deg) skew(15deg);
+    animation: rollOut 2s 1s infinite both;
+    filter: opacity(.6);
+    -webkit-filter: opacity(.6);
+}
+
+.slide1 > :nth-child(6) {
+    position: absolute;
+    left: 3.5rem;
+    top: 6rem;
+    animation: fadeOutRight 3s infinite both;
+}
+
+.slide1 > :nth-child(7) {
+    position: absolute;
+    left: 4rem;
+    top: 5.5rem;
+    filter: opacity(.7);
+    -webkit-filter: opacity(.7);
+    animation: flash 4s infinite both, fadeOutRight 4s infinite both;
+}
+
+.slide1 > :nth-child(8) {
+    width: .2rem;
+    height: 12rem;
+    position: absolute;
+    left: 4rem;
+
+    background: #999;
+    animation: vertical 1.5s 1.5s both;
+}
+
+@keyframes vertical {
+    from {
+        top: -12rem;
+        filter: opacity(1);
+        -webkit-filter: opacity(1);
+    }
+    to {
+        top: 12rem;
+        filter: opacity(0);
+        -webkit-filter: opacity(0);
+    }
+}
+
+.slide1 > :nth-child(9) {
+    width: 10rem;
+    height: .2rem;
+    position: absolute;
+
+    top: 10rem;
+    background: #999;
+    animation: transverse 2s 1.5s both;
+}
+
+@keyframes transverse {
+    from {
+        left: -10rem;
+    }
+    to {
+        left: 10rem;
+        filter: opacity(1);
+        -webkit-filter: opacity(1);
+    }
+}
+
+.slide1 > :nth-child(10) {
+    position: absolute;
+    left: 1.2rem;
+    top: .9rem;
+    z-index: -2;
+    border-radius: 70% 80% 90% 60%;
+    animation: pulse 5s 1s both;
+
+    transform: scale(1.1);
+    animation: opa 1s 1s both;
+}
+
+@keyframes opa {
+    from {
+        filter: opacity(0);
+        -webkit-filter: opacity(0);
+    }
+    to {
+        filter: opacity(.2);
+        -webkit-filter: opacity(.2);
+    }
+}
+
+/*第二页*/
+.slide2 > :nth-child(1),
+.slide3 > :nth-child(1),
+.slide4 > :nth-child(1),
+.slide5 > :nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    background: url(../img/6.jpg) no-repeat;
+    z-index: -2;
+    -webkit-filter: blur(3px) opacity(.8);
+    filter: blur(3px) opacity(.8);
+}
+
+.slide2 > :nth-child(1) img,
+.slide3 > :nth-child(1) img,
+.slide4 > :nth-child(1) img,
+.slide5 > :nth-child(1) img {
+    width: 140%;
+}
+
+.slide2 > :nth-child(2), .slide2 > :nth-child(3),
+.slide3 > :nth-child(2), .slide3 > :nth-child(3),
+.slide4 > :nth-child(2), .slide4 > :nth-child(3),
+.slide5 > :nth-child(2), .slide5 > :nth-child(3) {
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
+}
+#page2 > :nth-child(2), #page2 > :nth-child(3), #page2 > :nth-child(4),
+#page3 > :nth-child(2), #page3 > :nth-child(3), #page3 > :nth-child(4),
+#page4 > :nth-child(2), #page4 > :nth-child(3), #page4 > :nth-child(4),
+#page5 > :nth-child(2), #page5 > :nth-child(3), #page5 > :nth-child(4){
+
+
+
+}
+.slide2 > :nth-child(2),
+.slide3 > :nth-child(2),
+.slide4 > :nth-child(2),
+.slide5 > :nth-child(2) {
+    background-color: #0D736D;
+    position: absolute;
+    top: -.55rem;
+
+}
+
+.slide2 > :nth-child(3),
+.slide3 > :nth-child(3),
+.slide4 > :nth-child(3),
+.slide5 > :nth-child(3) {
+    position: absolute;
+    top: -.5rem;
+    left: -0.5rem;
+    background-color: #00dddd;
+}
+.slide2 > :nth-child(4),
+.slide3 > :nth-child(4),
+.slide4 > :nth-child(4),
+.slide5 > :nth-child(4){
+    font-size: .5rem;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: .6rem;
+    left: .2rem;
+}
+
+#page2 > :nth-child(5) {
+
+    font-weight: 400;
+    color: #0ff;
+    font-size: .3rem;
+    position: absolute;
+    top: 2rem;
+    right: .1rem;
+    animation: fadeInRight 1s both;
+}
+
+#page2 > :nth-child(6) {
+    width: .15rem;
+    height: 3rem;
+    background: #00dddd;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    animation: fadeInBottom 5s both;
+}
+
+#page2 > :nth-child(7) {
+    width: .5rem;
+    font-size: .5rem;
+    position: absolute;
+    bottom: 1.3rem;
+    left: .6rem;
+    color: #fff;
+    animation: fadeInLeft 3s both;
+}
+
+#page2 > :nth-child(8) {
+
+    position: absolute;
+    bottom: 1.3rem;
+    left: 2.3rem;
+    width: 3.8rem;
+    color: #0ff;
+    font-size: .34rem;
+    animation: fadeInRight 2s both;
+}
+
+#page2 > :nth-child(9) {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: .2rem;
+    top: 3.3rem;
+    overflow: hidden;
+    z-index: -1;
+    background: url('../img/photo_.jpg');
+    box-shadow: 0 0 1rem .5rem rgba(100, 100, 100, .7) inset;
+    background-size: 5rem 5rem;
+    animation: fadeIn 3s both;
+}
+
+.slide2 > :nth-child(10) {
+    position: absolute;
+    top: 7.5rem;
+    left: 1.3rem;
+
+}
+
+#page2 > :nth-child(10) img {
+    margin-bottom: .8rem;
+    width: 150%;
+    animation: fadeInLeft .6s both 1s;
+}
+
+/*
+第二页
+transform和animation不能同时生效
+
+*/
+/*第三页*/
+#page3 > :nth-child(5) li{
+    height: 1rem;
+    width: 2rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .4rem;
+    color: #fed;
+    font-weight: 400;
+    background: rgba(23,34,45,.5) ;
+    margin: 0 .2rem;
+    border-radius: .5rem;
+    position: absolute;
+
+}
+#page3 > :nth-child(5) li:nth-child(1){
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    background: #999999;
+    border-radius: 50%;
+    left:2rem;
+    top:5rem;
+    animation: fadeIn .7s both;
+}
+#page3 > :nth-child(5) li:nth-child(1) div{
+    animation: rotateIn 1s both .6s;
+}
+#page3 > :nth-child(5) li:nth-child(2){
+    left:2rem;
+    top:3rem;
+    animation: fadeInDown 1.6s both;
+}
+
+#page3 > :nth-child(5) li:nth-child(3){
+    animation: fadeInLeft 1.7s both;
+    top:4.5rem;
+}
+#page3 > :nth-child(5) li:nth-child(4){
+    left:4rem;
+    top:4.5rem;
+    animation: fadeInRight 1.5s both;
+}
+#page3 > :nth-child(5) li:nth-child(5){
+    animation: fadeInLeft 1.8s both;
+    top:6.3rem;
+}
+#page3 > :nth-child(5) li:nth-child(6){
+    left:4rem;
+    top:6.3rem;
+    animation: fadeInRight 1.7s both;
+}
+#page3 > :nth-child(5) li:nth-child(7){
+    left:2rem;
+    top:7.8rem;
+    animation: fadeInUp 1.8s both;
+}
+/*第四页*/
+#page4 > :nth-child(5){
+
+}
+#page4 > :nth-child(5) > :nth-child(1){
+    position: absolute;
+    color:#1ff;
+    font-size: .5rem;
+    top:3.4rem;
+    left:1rem;
+    text-shadow: 0 0 .5rem #000;
+    animation: zoomIn 1s both;
+}
+#page4 > :nth-child(5) > :nth-child(2) ul{
+    width: 4.6rem;
+    margin: 4.5rem auto;
+
+}
+#page4 > :nth-child(5) > :nth-child(2) ul li {
+    margin-top: .3rem;
+    color:#fff;
+    font-size: .35rem;
+    float: left;
+    text-shadow: 0 0 .3rem #1d0;
+}
+#page4 > :nth-child(5) > :nth-child(2) ul li:nth-child(1){
+
+    animation: fadeInLeft 1s both;
+}
+#page4 > :nth-child(5) > :nth-child(2) ul li:nth-child(2){
+    top:4.5rem;
+    animation: fadeInRight 1s both;
+}
+#page4 > :nth-child(5) > :nth-child(2) ul li:nth-child(3){
+    animation: fadeInLeft 1s both;
+}
+#page4 > :nth-child(5) > :nth-child(2) ul li:nth-child(4){
+    animation: fadeInRight 1s both;
+}
+/*第五页*/
+#page5 > :nth-child(5){
+    position: relative;
+    top:3.3rem;
+}
+#page5 > :nth-child(5) div{
+    width: 3rem;
+    height:3rem;
+    line-height: .8rem;
+    text-align: center;
+    border-radius: 50%;
+    z-index:2;
+    background: #aaa;
+    box-shadow: 0 0 .5rem #888;
+    font-size: .44rem;
+    font-weight: 700;
+    color:#33f;
+    position: absolute;
+    left:1.7rem;
+    top:.8rem;
+}
+#page5 > :nth-child(5) :nth-child(2){
+    position: absolute;
+    width: 8.4rem;
+    left: -1rem;
+}
+#page5 > :nth-child(6){
+    font-size: .4rem;
+    color:#fff;
+    width: 5rem;
+    text-shadow: 0.1rem 0.1rem .2rem #000;
+    position: absolute;
+    bottom:1rem;
+    left:1.3rem;
+}
+
+

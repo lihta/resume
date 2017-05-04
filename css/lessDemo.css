@@ -1,0 +1,61 @@
+#div1 {
+  width: 100px;
+  background: url("../img/logo.png");
+  /*-webkit-transition: @property @duration @timingFunction @delay;
+  -moz-transition: @property @duration @timingFunction @delay;
+  -ms-transition: @property @duration @timingFunction @delay;
+  -o-transition: @property @duration @timingFunction @delay;
+  transition: @property @duration @timingFunction @delay;*/
+  -webkit-transition: width 1s ease 0s;
+  -moz-transition: width 1s ease 0s;
+  -ms-transition: width 1s ease 0s;
+  -o-transition: width 1s ease 0s;
+  transition: width 1s ease 0s;
+}
+#div1:hover {
+  width: 400px;
+  /*-webkit-transition: @property @duration @timingFunction @delay;
+  -moz-transition: @property @duration @timingFunction @delay;
+  -ms-transition: @property @duration @timingFunction @delay;
+  -o-transition: @property @duration @timingFunction @delay;
+  transition: @property @duration @timingFunction @delay;*/
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+#div2 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/*
+.a1(){//�ڽ�������CSS�в����������Ĵ���
+  width: 100px;
+  height: 100px;
+}
+.a2{
+  color: red;
+  .a1;//��a1�Ĵ��븴����һ�ݷ���a2
+}
+*/
+.a1,
+.a2 {
+  width: 100px;
+  height: 100px;
+}
+/*
+.a2{
+  color: red;
+  &:extend(.a1);
+}
+*/
+.a2 {
+  color: red;
+}
+.box img {
+  color: green;
+}
